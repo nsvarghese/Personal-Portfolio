@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Nathan Varghese: STEM Foundations Portfolio Project</title>
+		<meta name="description" content="Nathan's DRSS Portfolio: Linear Unit- already knew this stuff, but made more sese since I had a better teacher."/>
+		<meta name="keywords" content="Linear, slope, y-intercept, page, portfolio"/>
+		<meta name="author content="Nathan Varghese"/>
+		<meta name="copyright" content="2018 Dayton Regional STEM School"/>
+		<meta name="rating" content="general"/>
+			
+				<link href="SiteStyle/global.css" rel="stylesheet"/>
+	</head>
+
+	
+	<body>
+	
+		<header>
+				<nav>
+					
+						<a href="index.html">Home</a>
+						<div class="dropdown">
+									<a href="experiences.html">Experiences</a>
+							<div class="dropdown-content">
+									<a href="Internship.html">Internship</a>
+							</div></div>
+						<a href="resume.html">Resume</a>
+						<a href="coding_prog.html">Coding Progression</a>
+						<a href="5_qualities.html">5 Qualities</a>
+								<!--normal links, NEED TO ADD DIVS TO EVERYTHING!!!-->
+								
+								<!--These are the 5 Qualities links, I applied the"Return to Top" code from Raptors, into my portfolio, so when you click a Quality from the dropdown, it sends you directly to that Quality, don't need right now-->
+							
+							<div class="dropdown">
+										<a href="projects.html">Projects</a>
+								<div class="dropdown-content">
+										<a href="6th_grade_index.html">6th Grade</a>
+										<a href="7th_grade.html">7th Grade</a>
+										<a href="8th_grade.html">8th Grade</a>
+										<a href="9th_grade.html">9th Grade</a>
+										<a href="10th_grade.html">10th Grade</a>
+										<a href="11th_grade.html">11th Grade</a>
+										
+										
+								</div></div>
+						
+									
+							<div class="dropdown">
+								<a href="7th_grade.html">7th Grade</a>
+							<div class="dropdown-content">
+								<a href="breakout_box_project.html">Breakout Box Project</a>
+								<a href="science_chemistry_unit.html"> Science: Chemistry Unit</a>
+								<a href="stem_portfolio_project.html">Stem Foundations Portfolio Project</a>
+							</div></div>
+					
+								<a href="mailto:varghese.11&#64;
+													wright.edu">Contact</a>	
+				
+				</nav>
+		</header>
+		
+				<!--The order of the paragraphs are different in my NotePad document because it was the only way for everything to look right in a web browser-->
+		<div id="main_content">
+		
+			<h1><strong>STEM Foundations Portfolio Project</strong></h1>
+			
+			<article>
+				<p>
+					The Portfolio Project is a very unique project.  Many schools don’t teach many 21st Century skills, but our school really values these skills.  One important one is coding.  So we are doing a big portfolio project.  The Driving Question (DQ) for this project was "How can we share our ability to be reflective and innovative problem solvers with DRSS peers and community members?"  So what is a portfolio?  A portfolio is a unique & electronic way to share about ourselves, show off what we are learning at school, and much more.  We coded our portfolios with HTML & CSS.  Now what is HTML?  HTML (Hyper Text Mark-up Language) is a fairly simple coding program that can help you create live websites on the Internet.  What is CSS?  CSS (Cascading Style Sheets) is a styling program that can really help you freely style your HTML document.  Our portfolios have a CSS External Style Sheet that we use to style and we link it to our HTML documents. This project started in 6th Grade and ends in 12th.  On our portfolios we have different required pages.  These include an introduction to the portfolio (Homepage), a Coding Progression page which shows our growth in coding each year, a 5 Qualities Page (See 5 Qualities page) , a Landing Page which has highlighted projects from that year, a link for each previous year’s portfolios, a global CSS page, and more.
+				</p>
+				
+					<div class="slideshow-container">
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 2</div>
+					  <img src="images/raptors_page_screenshot.png" style="width:100%">
+					  <div class="text">Raptors Page</div>
+					</div>
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 2</div>
+					  <img src="images/paint_portfolio_candy_shoppe_artifact.png" style="width:100%">
+					  <div class="text">Hogwarts Candy Shop Website Activity</div>
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					</div>
+					
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+					
+					<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+					
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+					
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						  dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					}
+					</script>
+			</article>
+			
+			<article>
+				<p>
+					<strong>Reflective Commentary</strong>
+					<br/>
+					<br/>
+					a.	The biggest struggle I had in this project was my styling.  Especially in my External CSS.  I had many selectors (selectors are the "tags" you use in CSS to style parts of your HTML document) overlap, so sometimes my content would look awkward (if you repeat selectors, the computer will look at the more accurate selector). Also, my background image (image on the back of my portfolio) wasn’t working for a while as a “saved image” (an image saved as a file to my computer).  I overcame my CSS issues by using a HTML Validator (a code checker) and used a .jpg file extension (a .png file extension wasn’t working, and a .jpg extension is recommended over a .png).
+					<br/>
+					<br/>
+					c.	Something I would have done differently in this project would be to write more CERs.  What I mean is, my content for Class/Project pages' claims would be more convincing if I had used evidence.  My content would also be more straightforward & easier to understand.
+					<br/>
+					<br/>
+					d.	By undertaking this project at DRSS, I will be equipped with many 21st Century Skills when I walk out.  Some of these skills include problem solving, critical thinking, analytical thinking, coding, thinking outside the box, critique/feedback, patience, all of the 5 Qualities, and writing skills. For example, I have become a better problem solver through the act of debugging frequently.  After a numerous amount of times debugging, you know what questions to ask yourself when debugging. 
+				</p>
+			</article>
+			
+					
+				<!--	<img src="images/raptors_page_screenshot.png" alt="Chemistry Pre-Test" height="450" width="790">
+					<img src="images/paint_portfolio_candy_shoppe_artifact.png" alt="Chemistry Pre-Test" height="450" width="790">-->
+			
+			
+			<article>
+				<p>
+					My artifact is obviously my portfolio, which you are on right now.  This shows my growth because I have improved in styling (as you can see from the comparison from my screenshotted Raptors Page & Candy Shoppe).  I have borders (better ones), a nav bar, more images, a background image, and positioning of different paragraphs now.  There is more on coding growth on my Coding Progression Page.
+				</p>
+			</article>
+		
+		
+
+	
+			
+		<footer>
+			<a href="#top">Return to Top</a>
+			<p>
+				&copy;2022.Nathan Varghese. Dayton Regional STEM School
+				<img src="images/paint_logo.png" alt="Portfolio Logo" style="width:250px; height:50px;">
+			</p>
+		</footer>
+		
+		</div>
+				
+	</body>
+	
+</html>

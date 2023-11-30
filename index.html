@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Nathan Varghese' Portfolio Homepage</title>
+		<meta name="description" content="Nathan's DRSS Portfolio: Homepage- intro to the website, tells reader what will be found on the website ."/>
+		<meta name="keywords" content="homepage, home, page, portfolio"/>
+		<meta name="author co8ntent="Nathan Varghese"/>
+		<meta name="copyright" content="2018 Dayton Regional STEM School"/>
+		<meta name="rating" content="general"/>
+			
+				<link href="SiteStyle/global.css" rel="stylesheet"/>
+				<link rel="icon" href="Images/paint_logo.png">
+			<!--CSS Stylesheet for everything-->
+			
+	</head>
+
+	
+	<body>
+		
+		<header>
+				<nav>
+					
+						<a href="index.html">Home</a>
+						<div class="dropdown">
+									<a href="experiences.html">Experiences</a>
+							<div class="dropdown-content">
+									<a href="Internship.html">Internship</a>
+							</div></div>
+						<a href="resume.html">Resume</a>
+						<a href="coding_prog.html">Coding Progression</a>
+									<!--normal links, NEED TO ADD DIVS TO EVERYTHING!!!-->
+									
+									<!--These are the 5 Qualities links, I applied the"Return to Top" code from Raptors, into my portfolio, so when you click a Quality from the dropdown, it sends you directly to that Quality-->
+								<div class="dropdown>
+								<!--I didn't comment on all my dropdowns, but this one applies to all, so this first class is a the calls the entire dropdown is in-->
+								
+								<div class="dropdown">
+										<a href="5_qualities.html">5 Qualities</a>
+								<div class="dropdown-content">
+										<a href="5_qualities.html#Persistence">Persistence</a>
+										<a href="5_qualities.html#Inquiry">Inquiry</a>
+										<a href="5_qualities.html#Creativity">Creativity</a>
+										<a href="5_qualities.html#Collaboration">Collaboration</a>
+										<a href="5_qualities.html#Communication">Communication</a>
+								</div></div>							
+								
+								<div class="dropdown">
+										<a href="projects.html">Projects</a> <!--This is the link you see on the website before you hover over it, under this is all the dropdown content-->
+										
+								<div class="dropdown-content"> <!--this is all the content, the stuff you find when you hover over the dropdown-->
+										<a href="6th_grade_index.html">6th Grade</a>
+										<a href="7th_grade.html">7th Grade</a>
+										<a href="8th_grade.html">8th Grade</a>
+										<a href="9th_grade.html">9th Grade</a>
+										<a href="10th_grade.html">10th Grade</a>
+										<a href="11th_grade.html">11th Grade</a>
+										<a href="12_grade.html">12th Grade</a>
+								</div></div>
+							
+							<a href="mailto:varghese.11&#64;
+										daytonstemschool.org">Contact</a>
+							
+							
+					
+				</nav>
+		</header>
+		
+		
+		<div id="main_content">
+			
+				<h1><strong>Introduction</strong></h1>
+				<article>
+				<p>
+					Hello!  My name is Nathan Varghese and you are looking at my very own Dayton Regional STEM School (DRSS) portfolio; coded with HTML (Hyper Text Mark-up Language), CSS (Cascading Style Sheets), and some JavaScript.  Coding my portfolio began 6 years ago in 6th grade and each year I developed my coding skills to create a digital portfolio tailored to my interests.  I am now a graduating senior at DRSS and plan on going to The Ohio State University for chemical engineering. You can find highlights, or my favorite projects I reflected on, under the <a href="projects.html">Projects</a> dropdown, dating all the way back to 7th grade!  Some of the pages you can find on my website include my <a href="experiences.html">Experiences</a>, which you will learn more about me; my <a href="coding_prog.html">Coding Progression</a> page, highlighting how I have grown in my coding skills each year; and my <a href="5_qualities.html">5 Qualities</a> page, highlighting the five major qualities that make a STEM student unique and my definition and experience with each of them.  I hope you enjoy scrolling through my portfolio and can see for yourself how I have grown in coding, language/writing, and professionalism in my 6th-12th educational career at DRSS.
+				</p>
+						<!--I added images to make my web page look more appealing to the viewer-->
+						
+						<!-- I included a STEM School Image to show readers what our school looks like, if they didn't know-->
+					<!--<figure>
+						<img src="images/stem_school_image.jpg" height="300" width="500" class="img_style">
+							<figcaption>Our School</figcaption>
+					</figure>
+					
+					<figure>		
+						<img src="images/homepage_family_pic.jpg"  height="300" width="500" class="img_style2">
+							<figcaption>A family picture, from top right: my dad, mom, Matthew, Jacob, & me (bottom left) </figcaption>
+					</figure>-->
+					
+					<div class="slideshow-container">
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 2</div>
+					  <img src="images/pfp3.jpg
+					  " style="width:100%">
+					  <div class="text">Me!</div>
+					</div>
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 2</div>
+					  <img src="images/stem_school.jpg" style="width:100%">
+					  <div class="text">Our School</div>
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					</div>
+					
+					
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					</div>
+					
+					<script>
+					var slideIndex = 1;
+					showSlides(slideIndex);
+					
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+					
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+					
+					function showSlides(n) {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  var dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						  slides[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						  dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					}
+					</script>
+				</article>
+	
+				
+		
+			
+		<footer>
+			<a href="#top">Return to Top</a>
+			<p>
+				&copy;2022.Nathan Varghese. Dayton Regional STEM School
+				<img src="images/paint_logo.png" alt="Portfolio Logo" style="width:250px; height:50px;">
+			</p>
+		</footer>
+		
+	</body>
+	
+</html>
